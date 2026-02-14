@@ -1,10 +1,17 @@
+<script setup lang="ts">
+const { getToken } = useAuthToken()
+
+onMounted(() => {
+  const token = getToken()
+  if (token) {
+    navigateTo('/dashboard/links')
+  }
+  else {
+    navigateTo('/dashboard/login')
+  }
+})
+</script>
+
 <template>
-  <div class="flex flex-col justify-center">
-    <HomeHero />
-    <HomeLogos />
-    <HomeFeatures />
-    <HomeStats />
-    <HomeTestimonials />
-    <HomeCta />
-  </div>
+  <div />
 </template>

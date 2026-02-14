@@ -42,7 +42,7 @@ export default defineNuxtConfig({
   },
   routeRules: {
     '/': {
-      prerender: true,
+      ssr: false,
     },
     '/api/**': {
       cors: process.env.NUXT_API_CORS === 'true',
