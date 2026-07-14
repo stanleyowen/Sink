@@ -1,3 +1,11 @@
+allowBuilds:
+  esbuild: true
+  maplibre-gl: true
+  sharp: true
+  simple-git-hooks: true
+  unrs-resolver: true
+  vue-demi: true
+  workerd: true
 onlyBuiltDependencies:
   - '@tailwindcss/oxide'
   - esbuild
