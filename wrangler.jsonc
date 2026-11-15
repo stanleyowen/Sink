@@ -21,7 +21,8 @@
       "enabled": true
     },
     "traces": {
-      "enabled": true
+      "enabled": true,
+      "head_sampling_rate": 0.1 // Trace 10% of requests to limit observability usage
     }
   },
   "ai": {
