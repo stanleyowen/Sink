@@ -1,8 +1,6 @@
 <script setup lang="ts">
-const { getToken } = useAuthToken()
-
 onMounted(() => {
-  const token = getToken()
+  const token = getAuthToken()
   if (token) {
     navigateTo('/dashboard/links')
   }
