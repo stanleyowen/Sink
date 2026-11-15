@@ -12,6 +12,9 @@
     "nodejs_compat"
   ],
   "keep_vars": true,
+  // Serve only via the custom domain (protected by Cloudflare Access); keep *.workers.dev and preview URLs off
+  "workers_dev": false,
+  "preview_urls": false,
   "upload_source_maps": true,
   "observability": {
     "logs": {
